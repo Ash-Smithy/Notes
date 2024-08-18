@@ -62,7 +62,7 @@ Presenting the flow of a sequence/proces using symbols.
 ![Flow](images/image-4.png)
 ![Connector](images/image-5.png)
 
-*Flowchart Example for adding two numbers*
+*Flowchart Example for adding two numbers* <br>
 ![Adding numbers flowchart](images/image-6.png)
 
 <ins>*Example algorithm and flowchart for finding greater of two numbers*</ins>
