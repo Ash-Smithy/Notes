@@ -268,7 +268,7 @@ Output will be as:
 > Hello there!
 > ```
 > 2. <ins>**getch()** </ins><br>
-The getch() [read as *get character function*] is used towards the end of the program. This function basically asks the computer to wait on the output terminal until the user presses any key.
+The getch() [read as *get character function*] is used towards the end of the program. This function basically asks the computer to wait on the output terminal until the user presses any key. (If you're using vsc, you don't need to use this)
 
 ### Few Example Programs implementing what we learnt so far
 1. Program showing use of whitespace character
