@@ -62,7 +62,7 @@ Presenting the flow of a sequence/proces using symbols.
 ![Flow](images/image-4.png)
 ![Connector](images/image-5.png)
 
-*Flowchart Example for adding two numbers*
+*Flowchart Example for adding two numbers* <br>
 ![Adding numbers flowchart](images/image-6.png)
 
 <ins>*Example algorithm and flowchart for finding greater of two numbers*</ins>
@@ -79,7 +79,7 @@ Print *b* is greater <br>
 
 > Step 5: Stop <br>
 
- Flowchart: 
+ Flowchart: <br>
  ![greater_flowchart](images/image-7.png)
 
 
@@ -120,7 +120,7 @@ In C, data types can be calssified into 3 categories:
 
 
 ## Whitespace Characters in C
-   - Whitespace is the term used in C to describe blanks, tabs, newline characters and comments. Whitespace separates one part of a statement from another and enables the compiler to identify where one element in a statement, such as int, ends and the next element begins. 
+   - Whitespace is the term used in C to describe blanks, tabs, newline characters and comments. Whitespace separates one part of a statement from another and enables the compiler to identify where one element in a statement, such as int, ends and the next element begins. <br>
 ![alt text](images/image-9.png)
 
 For example: <br>
@@ -139,7 +139,7 @@ Mangoes are yellow.
 even though both the sentences were typed in the same printf statement without line break.
 
  ## Format Specifiers in C
- Format specifiers in C are certain special symbols used in the formatted console Input/Output [IO] functions such as `printf()` and `scanf()`
+ Format specifiers in C are certain special symbols used in the formatted console Input/Output [IO] functions such as `printf()` and `scanf()` <br>
  ![format_specifiers](images/image-10.png)
 
  Syntax: `printf("<statement_with_format_specifier>",<variable_names_in_order);` <br>
