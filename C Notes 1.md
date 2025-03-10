@@ -160,6 +160,9 @@ printf("%d is the number you inputed",x);
 ```
 The `%d` , integer format specifier, is used to represent the value that variable `x` is holding.
 
+> ## Saving the code file.
+Once you've created a new file and write your program, you need to save the file with a `.c` extension and run the program for it to execute properly. (For example: *program1.c*). And for everytime you make changes, you need to save the file before running your code, else  the changes won't be visible.
+
  ## Structure of a C Program
  1. Documentation Section
  2. Preprocessing Section (Link section)
