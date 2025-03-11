@@ -147,8 +147,16 @@ A voluntary framework that consists of standards, guidelines, and best practices
 
     Security Principles:
     - Minimize attack surface areas.
-    - Principe if least privilege
-    - Defence in depth
-    - Seperation of duties
-    - Keep Security Simple
-    - Fix security issues connrectly
+        Attack surface refers to all the potentila vulnerabilities a threat actor could exploit
+    - Principe if least privilege:
+        Users have the least amount of access required to perform their everyday tasks.
+    - Defence in depth:
+        Organizations should have varying security controls that mitigate risks.
+    - Seperation of duties:
+        Critical actions should rely on multiple people, each of whom follow the principle of least privilege.
+    - Keep Security Simple:
+        Avoid unnecessarily complicated solutions. Complexity makes security difficult.
+    - Fix security issues connrectly:
+        When security indidnets occur, identify the root cause, contain the impact, identify vulnerabilities, and conduct tests to ensure that remediation is successful.
+
+
