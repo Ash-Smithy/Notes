@@ -159,4 +159,70 @@ A voluntary framework that consists of standards, guidelines, and best practices
     - Fix security issues connrectly:
         When security indidnets occur, identify the root cause, contain the impact, identify vulnerabilities, and conduct tests to ensure that remediation is successful.
 
+### Additional OWASP Security Principles:
+    Establish secure defaults:
+        OPtimal security state of an application is also its default state for users; it should take extra work to make the application insecure.
+    Fail Securely:
+        Fail securely means that when a control fails or stops, it should do so by defaulting to its most secure option.
+        For example, when a firewall fails it should simply close all connections and block all new ones, rather than start accepting everything.
+    Don't Trust Services:
+        Many organizations work with third=party partnets. These outside partners often have different security policies than the org does. And the organizaiton shouldn't explicitly trust that their partners' systems are secure.
+        For example: if a thirs-party vendor tracks reward points for airline customers, the airline should ensure that the balance is accurate before sharing that information with the customers. 
+    
+    Avoid Security by obscurity:
+        The security of an application should not rely on keeping the source code secret. Its security should rely upon many other factors, including reasonable password policies, defence in depth, business transaction limits, solid network architecture and fraud and audit controls.
+
+
+
+ ### Security audit
+    A review of an organization's security controls,policies, and procedures against a set of expectations.
+    Two types: Internal and External.
+    Internal Audit is controlled by a team of people (including manager)
+    - Internal Security Audits Purpose:
+        - Identify Organizational risk
+        - Assess controls
+        - Correct compliance issues
+    - Common elements of Internal Audits:
+        - Establishing the scope and goals
+            Scope refers to the specific criteria of an internal security audit. Identify, people, assets, policies, procedures and technoligies that improve security posture.
+            Goals are an outline of the organization's security objectives.
+        - Conducting a risk assessment
+            Identifying potential threats, risks and vulnerabilities. Helps in knocning what security measures need to be taken.
+        - Completing a controls assessment
+            Control Categories:
+                - Administrative controls.
+                - Technical Controls. (hardware and software controls)
+                - Physical controls. (like cameras and locks)
+        - Assessing compliance
+        - Communicating results 
+            Communicate the chnages to stakeholders.
+            - Summarizes scope and goals
+            - Lists existing risks
+            - Notes how quickly those risks need to be addressed
+            - Identifies compliacne regulations
+            - Provides Recommendations
+
+
+# Module 3
+
+  ### Logs
+        Record of an event
+
+        Sources:
+            - Firewall log
+                is a record of attempted or established connections for incoming traffic from the internet. It also includes outbound requests to the internet from withing the network.
+            - Network
+                is a record fo all computers and devices that enter and leave the network. It also records connections between devices and services on the network.
+            - Server 
+                is a record of events related to services, such as webites, emails, or file shares. It includes actionss such as login, passowrd and username requests. 
+
+ ### Security Information and Event Management (SIEM)
+        An application that collects and analyzes log data to monitor critical activities in an organization.
+
+        Metrics:
+            Key technical attributes, such as response time, availability, and failure rate, which are used to assess the performance of a software application.
+        
+        Security orchestration, automation, and response (SOAR):
+             is a collection of applications, tools, and workflows that uses automation to respond to security events
+
 
