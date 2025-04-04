@@ -225,4 +225,66 @@ A voluntary framework that consists of standards, guidelines, and best practices
         Security orchestration, automation, and response (SOAR):
              is a collection of applications, tools, and workflows that uses automation to respond to security events
 
+   ## SIEM Tools
+        - Self-hosted
+        - Cloud-hosted 
+        - Hybrid (both self and cloud)
+            Ex: Splunk Enterprise, Splunk Cloud
+    
+   ### Examples of Commonly used SIEM tools
+    Splunk
+        is an data analysis platform
+        - Splunk Enterprise:
+            A self -hosted tool used to retain, analyze, and search an organization's log data to provide security information and alerts in real-time.
+        - Splunk Cloud:
+            A cloud-hosted tool used to collect,search and monitor log data. Works for hybrid orgs
+        - Chronicle (by Google)
+            Cloud-native tool used to reatin, analyze and search data.
+    
+    Cloud native tools:
+        SImilar to cloud-hosted tools, maintained and managed by vendor. But specifically designed to take full advantage of cloud. (availability, flexibility, scalability)
 
+   ### More CS tools:
+        - Open-source tools:
+            THese are often free, and are user friendly.
+            The objective of open-source tools is to provide users with software that is built by the public in a collaborative way, which can result in the software being more secure.
+            Example: Linux, Suricata.
+            
+        - Proprietary tools:
+            Proprietary tools are developed and owned by a person or company, and users typically pay a fee for usage and training. The owners of proprietary tools are the only ones who can access and modify the source code.
+            Examples: Splunk, Chronicle.
+
+# Module 4
+   ### Playbook
+            A manual that provides details about any operational action.
+
+   ### Incident Respone
+        An organization's quick attempt to identify an attack, contain the damage and correct the effects of a security breach.
+
+   ### Incident Respone playbook phases
+        - Preparation
+            documenting procedures, establishing staffing plans, educating users.
+        - Detectiong and Analysis
+            Detect and analyze events using defined proccesses and technology.
+        - Containment
+            prvenet further damage and reduce immediate impact of security incident.
+        - Eradication and Recovery (IT Resoration)
+            Removal of incidents artifcats for organisation to return to normal function.
+        - Post incident activity
+            Documenting the incident, informing leadership, applying lessons learnt to make sure organisation is ready if incident occurs again.
+        - Coordination
+            recording incidents and sharing informaation based on org's established standards. 
+        
+        Playbooks can be used for:
+            - Open atttacks
+            - Privacy Incidents
+            - Data leaks
+            - Denial Of Service attaks
+            - Service alerts
+            - Others
+
+   ## Playbooks & SIEM Tools
+        Playbooks are generally used alongside SIEM tools. If, for example, unusual user behavior is flagged by a SIEM tool, a playbook provides analysts with instructions about how to address the issue. 
+   ## Playbooks & SOAR Tools
+         For example, if a user attempts to log into their computer too many times with the wrong password, a SOAR would automatically block their account to stop a possible intrusion. Then, analysts would refer to a playbook to take steps to resolve the issue.
+    
