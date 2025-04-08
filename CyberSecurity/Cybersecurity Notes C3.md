@@ -198,3 +198,107 @@ When organizations use more than one CSP, it is called a **multi-cloud environme
 ### MAC address
     A unique alphanumeric identifier that is assigned to each physical device on a network
 
+
+# Module 2
+
+## Network Protocols
+> A set of rules used by two or more devices on a network to describe the order of delivery and structure of the data
+
+## Transmission Control Protocol (TCP)
+> An internet communications protocol that allows two devices to form a  connection and stream data
+
+## Address Resolution Protocol (ARP)
+> A network protocol used to determine the MAC address of the next router or device on the path
+
+## Hyper Text Trannfer Protocol Secure (HTTPS)
+> A network protocol that provides a secure method of communication between clients and website servers
+
+## Domain Name System (DNS)
+> A network protocol that translates internet domain names into IP addressses
+
+
+## Three Categories of Network Protocols
+
+>### 1. Communication Protocols
+>   Communication protocols govern the exchange of information in the network transmission. They dictate how the data is transmitted between deviec and the time of the communication. THey also include methods to recover data lost in transit. <br>
+>    Few communication protocols are:  <br>
+>>   - **Transmission Control Protocol (TCP):**  <br>
+            TCP uses a three-way handshake process. First, the device sends a synchronize (SYN) request to a server. Then the server responds with a SYN/ACK packet to acknowledge receipt of the device's request. Once the server receives the final ACK packet from the device, a TCP connection is established. In the TCP/IP model, TCP occurs at the transport layer.
+>>   - **User Datagram Protocol (UDP):**  <br>
+            is a connectionless protocol that does not establish a connection between devices before a transmission. This makes it less reliable than TCP. But it also means that it works well for transmissions that need to get to their destination quickly. In the TCP/IP model, UDP occurs at the transport layer.
+>>  - **Hypertext Transfer Protocol (HTTP):**  <br>
+            is an application layer protocol that provides a method of communication between clients and website servers. HTTP uses port 80. HTTP is considered insecure, so it is being replaced on most websites by a secure version, called HTTPS that uses encryption from SSL/TLS for communication. However, there are still many websites that use the insecure HTTP protocol. In the TCP/IP model, HTTP occurs at the application layer.
+>>  - **Domain Naming System (DNS):**  <br>
+            is a protocol that translates internet domain names into IP addresses. When a client computer wishes to access a website domain using their internet browser, a query is sent to a dedicated DNS server. The DNS server then looks up the IP address that corresponds to the website domain. DNS normally uses UDP on port 53. However, if the DNS reply to a request is large, it will switch to using the TCP protocol. In the TCP/IP model, DNS occurs at the application layer. 
+
+> ### 2. Management Protocols:
+> Second category of network protocols is management protocols.These are used for monitoring and managaing activity on a network. They uncluse protocols for error reporting and optimizing performance on the network.
+>> - **Simple Network Management Protocol (SNMP):**
+>> is a network protocol used for monitoring and managing devices on a network. SNMP can reset a password on a network device or change its baseline configuration. It can also send requests to network devices for a report on how much of the network’s bandwidth is being used up. In the TCP/IP model, SNMP occurs at the application layer.
+>> - **Internet Control Message Protocol (ICMP):** 
+>> is an internet protocol used by devices to tell each other about data transmission errors across the network. ICMP is used by a receiving device to send a report to the sending device about the data transmission. ICMP is commonly used as a quick way to troubleshoot network connectivity and latency by issuing the “ping” command on a Linux operating system. In the TCP/IP model, ICMP occurs at the internet layer.
+
+> ### 3. Security Protocols
+> Security protocols are network protocols that ensure that data is sent and received securely across a network. Security protocols use encryption algorithms to protect data in transit. Below are some common security protocols.
+>> - **Hypertext Transfer Protocol Secure (HTTPS):**
+>> is a network protocol that provides a secure method of communication between clients and website servers. HTTPS is a secure version of HTTP that uses secure sockets layer/transport layer security (SSL/TLS) encryption on all transmissions so that malicious actors cannot read the information contained. HTTPS uses port 443. In the TCP/IP model, HTTPS occurs at the application layer.
+>> - **Secure File Transfer Protocol (SFTP):**
+>> is a secure protocol used to transfer files from one device to another over a network. SFTP uses secure shell (SSH), typically through TCP port 22. SSH uses Advanced Encryption Standard (AES) and other types of encryption to ensure that unintended recipients cannot intercept the transmissions. In the TCP/IP model, SFTP occurs at the application layer. SFTP is used often with cloud storage. Every time a user uploads or downloads a file from cloud storage, the file is transferred using the SFTP protocol.
+
+
+
+> ## IEEE 802.11 (wifi)
+> A set of standards that define communication for wireless LANs  <br>
+> ### WiFi Protected Access (WPA)
+> A wireless security protocol for devices to connect to the internet
+> (improvement of WEP) <br>
+> #### Wired Equivalent Privacy (WEP)
+> Wired equivalent privacy (WEP) is a wireless security protocol designed to provide users with the same level of privacy on wireless network connections as they have on wired network connections. <br>
+> ### WPA2
+> The second version of Wi-Fi Protected Access—known as WPA2—was released in 2004. WPA2 improves upon WPA by using the Advanced Encryption Standard (AES). WPA2 also improves upon WPA’s use of Temporal Key Integrity Protocol (TKIP). WPA2 uses the Counter Mode Cipher Block Chain Message Authentication Code Protocol (CCMP), which provides encapsulation and ensures message authentication and integrity.
+
+
+> ## Firewall
+> A network security device that monitors traffic to and from your network <br>
+> #### Port Filtering
+>  A firewall function that blocks ot allows certain port numbers to limit unwanted communication <br>
+> ### Cloud-based firewalls
+> Software firewalls that are hosted by a cloud service provider <br>
+
+> ### Stateful
+> A class of firewall that keeps track of information passing through it and proactively filters out threats
+
+> ### Stateless
+> A class of firewall that operates based on predefined rules and does not keep track of information from data packs.
+
+> #### Benefits of Next Generation firewalls (NGFWs)
+> - Deep packet inspection
+> - Intrusion protection
+> - Threat Intelligence
+
+> ## Virtual Private Network (VPN)
+> A network security service that changes your public IP address and hides your virtual location so that you can keep your data private when you are using a public network like the internet. It also encrypts data and performs encapsulation
+> **Encapsulation** is a process performed by a VPN service that protects your data by wrapping sensitive data in other data packets
+
+> ## Security Zone
+> A segment of a network that protects the internal network from the internet
+> ### Network Segmentation
+> A security technique that divides the network into segments
+## 2 types of security zones
+> ### 1. Uncontrolled Zone
+>  Any network outside of the organization's control
+> ### 2. Controlled Zone
+> A subnet that protects the internal network from the uncontrolled zone
+
+> #### Areas in the controlled zone
+> - Demilitarized zone (DMZ)
+> - Internal Network
+> - Restricted Zone
+<br>
+
+
+> ## Subnetting 
+> is the subdivision of a network into logical groups called subnets. It works like a network inside a network. Subnetting divides up a network address range into smaller subnets within the network. 
+
+> ## Classless Inter-Domain Routing (CIDR)
+> is a method of assigning subnet masks to IP addresses to create a subnet.
