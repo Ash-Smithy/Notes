@@ -301,4 +301,91 @@ When organizations use more than one CSP, it is called a **multi-cloud environme
 > is the subdivision of a network into logical groups called subnets. It works like a network inside a network. Subnetting divides up a network address range into smaller subnets within the network. 
 
 > ## Classless Inter-Domain Routing (CIDR)
-> is a method of assigning subnet masks to IP addresses to create a subnet.
+> is a method of assigning subnet masks to IP addresses to create a subnet. 
+
+> ## Proxy servers
+>> A server that fulfill the requests of a client by forwarding them on to other servers
+>> ### Forward proxy server
+>>> Regulates and restricts a person's access to the internet
+>> ### Reverse proxy server
+>>> Regulates and restricts the internet's access to an internal server
+
+
+# Module 3 **Secure Against Network Intrusions**
+
+### Attacks
+
+> #### Network Interception Attacks
+> Network interception attacks work by intercepting network traffic and stealing valuable information or interfering with the transmission in some way.
+
+> #### Backdoor Attacks
+> This kind of attacks are done by people who are part of the organisation. They take advantage of their access privileges 
+
+>> #### Possible impact on organisation
+> - Financial
+> - Reputation
+> - Public safety
+
+
+> ## Denial Of Service Attacks (DoS)
+> A DoS attack is an attack that targets a network or server and floods it with network traffic.
+
+> ### Distributed Denial Of Service attack (DDoS)
+> A type of denial of service attack that uses multiple devices or servers in different locations to flood the target network with unwanted 
+
+> ## Network Level DoS attacks
+> ### SYN (synchronize) Flood Attack
+>> A type of DoS atack that simulates a TCP connection and floods a server with SYN 
+
+>>> #### Internet Conotrol Message Protocol (ICMP)
+>>>> An internet protocol used by devices to tell each other about data transmission errors across the network  
+
+> ### ICMP Flood Attack 
+>> A type of DoS attack performed by an attacker repeatedly sending ICMP packets to a network server
+
+> ### Ping of Death
+>> A type of DoS attack caused when a hacker pings a system by sending it an oversized ICMP packet that is bigger than 64KB
+
+> ##  Network Protocol Analyzer
+> sometimes called a packet sniffer or a packet analyzer, is a tool designed to capture and analyze data traffic within a network. They are commonly used as investigative tools to monitor networks and identify suspicious activity. There are a wide variety of network protocol analyzers available, but some of the most common analyzers  include:
+> - SolarWinds NetFlow Traffic Analyzer
+> - ManageEngine OpManager
+> - Azure Network Watcher
+> - Wireshark
+> - tcpdump
+
+> ### tcpdump
+> tcpdump is a command-line network protocol analyzer. It is popular, lightweight–meaning it uses little memory and has a low CPU usage–and uses the open-source libpcap library. tcpdump is text based, meaning all commands in tcpdump are executed in the terminal. It can also be installed on other Unix-based operating systems, such as macOS®. It is preinstalled on many Linux distributions. <br> <br>
+> tcpdump provides a brief packet analysis and converts key information about network traffic into formats easily read by humans. It prints information about each packet directly into your terminal. tcpdump also displays the source IP address, destination IP addresses, and the port numbers being used in the communications. 
+
+> #### botnet
+>> A botnet is a collection of computers infected by malware that are under the control of a single threat actor, known as the “bot-herder." 
+
+
+> ## Packet Sniffing
+>> The act of capturing and inspecting packets in a network.
+>> Packet sniffing can be of two types:
+> ### Passive packet sniffing
+>> A type ofa ttack where data packets are read in transit
+> ### Active packet sniffing
+>> A type of attack where data packets are manipulated in transit
+
+### Ways of preventing packet sniffing:
+> - Using VPN
+> - Make sure websites use HTTPS
+> - Avoid using unprotected wifi
+
+> ## IP Spoofing
+>> A network attack performed when an attacker changes the source IP of a data packet to impersonate an authorized system and gain access to a network
+
+> ### Common IP spoofing attacks:
+> - **On-path attack** (meddler-in-the middle attack)
+>> An attack where a malicious actor places themselves in the middle of an authorized connection and intercepts or alters the data in transit
+> - **Replay attack**
+>> A network attack performed when a malicious actor intercepts a data packet in transit and delays it or repeats in at another time
+> - **Smurf aattack**
+>> a network attack performed when an attacker sniffs an authorized user's IP address and floods it with packets. (Combination of DoS and IP Spoofing)
+
+> #### How to protect form IP spoofing:
+>> - Encryption
+>> - Configuring Firewalls
