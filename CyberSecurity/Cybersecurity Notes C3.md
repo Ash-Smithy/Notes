@@ -389,3 +389,58 @@ When organizations use more than one CSP, it is called a **multi-cloud environme
 > #### How to protect form IP spoofing:
 >> - Encryption
 >> - Configuring Firewalls
+
+
+# Module 4 **Security Hardening**
+
+> ## Security Hardening 
+> The process of strengthening a system to reduce its vulnerability and attack surface
+>
+> ## Attack surface
+>> All the potential vulnerabilities that a threat actor could exploit
+>
+> ## Security hardening is conducted on
+> - Hardware
+> - Operating Systems
+> - Applicationsss
+> - Computer Networks
+> - Databases
+>
+> ## Penetration test (Pen test)
+>> A simulatted attack that helps identify vulnerabilities in systems, networks, websites, applications and processes
+
+
+> ## Operating System Hardening
+>
+> ### Operating System
+>> The interface between computer hardware and user
+>
+> ## Regularly seen OS hardening tasks
+>
+> - ### Patch Updates
+>> A software and operating system update that addresses security vulnerabilities within a program or product
+>
+> - ### Baseline Cofiguration (Baseline image)
+>> A documented set of specification within a system that is used as a basis for future builds, releases and updates.
+>
+> - ### Multi-Factor Authentication (MFA)
+>> A security measure which requires a user to verify their identity in two or more ways to access a system or network
+>>> **Categories of multi-factor identification**
+>>> - Something you know
+>>> - Something you have
+>>> - Something unique about you
+
+> ## Brute Force Attacks
+>> A brute force attack is a trial-and-error process of discovering private information. There are different types of brute force attacks that malicious actors use to guess passwords, including: 
+>
+>> - **Simple brute force attacks:** 
+>> When attackers try to guess a user's login credentials, it’s considered a simple brute force attack. They might do this by entering any combination of usernames and passwords that they can think of until they find the one that works.
+>
+>> - **Dictionary attacks use a similar technique:** 
+>> In dictionary attacks, attackers use a list of commonly used passwords and stolen credentials from previous breaches to access a system. These are called “dictionary” attacks because attackers originally used a list of words from the dictionary to guess the passwords, before complex password rules became a common security practice. 
+
+> ### Prevention measures
+> - Salting and hashing
+> - Multi-factor authenitcation (MFA) and two-factor autehnication (2FA)
+> - CAPTCHA and reCAPTCHA
+> - Password Policies
