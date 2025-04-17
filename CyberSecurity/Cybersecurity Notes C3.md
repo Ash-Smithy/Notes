@@ -444,3 +444,57 @@ When organizations use more than one CSP, it is called a **multi-cloud environme
 > - Multi-factor authenitcation (MFA) and two-factor autehnication (2FA)
 > - CAPTCHA and reCAPTCHA
 > - Password Policies
+
+
+## Network Hardening
+
+> ### Security Information and Event Management tool (SIEM)
+> An application that collects and analyzes log data to monitor critical activities in an organisation
+
+> ### Port Filtering
+> A firewall function that blocks or allows certain port numbers to limit unwanted communication
+
+![Network Hardening Tool](image-5.png)
+
+
+## Cloud Hardening
+
+> ### Cloud Network
+> A collection of servers or computers that stores resources and data in a remote data centres that can be accessed via the internet
+
+
+> #### Cloud security considerations
+> - Identity access management
+> - Configuration
+> - Attack Surface
+> - Zero-day attacks
+> - Visibility and tracking
+> - Shared responsibility model
+
+
+## Cloud Security Hardening
+
+> - **Identity access management (IAM)**
+> IAM is a collection of processes and technologies that helps organizations manage digital identities in their environment. This service also authorizes how users can leverage different cloud resources.
+
+> - **Hypervisors**
+> A hypervisor abstracts the host’s hardware from the operating software environment. There are two types of hypervisors. Type one hypervisors run on the hardware of the host computer. Two types
+>> - Operate on software of the host computer
+>> - Operates on hardware of the host computer
+
+> - **Baselining**
+> Baselining for cloud networks and operations cover how the cloud environment is configured and set up. A baseline is a fixed reference point. This reference point can be used to compare changes made to a cloud environment.
+
+> - **Cryptography in the cloud**
+> Cryptography can be applied to secure data that is processed and stored in a cloud environment. Cryptography uses encryption and secure key management systems to provide data integrity and confidentiality. Cryptographic encryption is one of the key ways to secure sensitive data and information in the cloud.
+
+> - **Cryptographic erasure**
+> Cryptographic erasure is a method of erasing the encryption key for the encrypted data. When destroying data in the cloud, more traditional methods of data destruction are not as effective. 
+
+> - **Key Management**
+
+> Modern encryption relies on keeping the encryption keys secure. Below are the measures you can take to further protect your data when using cloud applications:
+
+>> - Trusted platform module (TPM). TPM is a computer chip that can securely store passwords, certificates, and encryption keys.
+
+>> - Cloud hardware security module (CloudHSM). CloudHSM is a computing device that provides secure storage for cryptographic keys and processes cryptographic operations, such as encryption and decryption.
