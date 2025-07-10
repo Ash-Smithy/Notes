@@ -126,3 +126,145 @@ Some areas of cybersecurity in which Python might be used to automate specific t
 > Returns the data type of its input \
 > Syntax: `type(<variable>)`
 > 
+> ## Conditional Statements
+> A conditional statement is a statement that evaluates code to determine whether it meets a specific set of conditions. When a condition is met, it evaluates to a Boolean value of True and performs specified actions. When the condition isn’t met, it evaluates a Boolean value of False and doesn’t perform the specified actions. 
+> ### `if` Statements
+> *Syntax*: \
+> ```
+> if  <condition>: # (Header) starts a conditional statement
+>  <code_to_execute> # (Body) the code to execute if said condition is met
+> ```
+> *Example*: \
+> ```
+> if failed_attempts > 5:
+>   print("Account Locked")
+> ```
+>
+> ### Conditional Operators
+> - `>` - Greater than
+> - `<` - Less than
+> - `>=` - Greater than equal to
+> - `<=` - Less than equal to
+> - `==` - (equal to) Evaluates whether two objects match
+> - `!=` - (not equal to) Evaultes whether two objects are different
+>
+> ### `else` statement
+> Precedes a code section that only evaluates when all conditions that precede it within the conditional statement evaluate to false
+>
+> *Syntax*: \
+> ```
+> if  <condition>: # (Header) starts a conditional statement
+>  <code_to_execute> # (Body) the code to execute if said condition is met
+> else:
+> <code_to_execute_if_previous_condition_is_not_met>
+> ```
+> *Example*: \
+> ```
+> operating_system = "OS 3"
+> if operating_system == "OS 2":
+>   print("Update needed")
+> else: 
+>   print("No updates needed")
+> ```
+>
+> ### `elif` statements
+> A conditional statement is a statement that evaluates code to determine whether it meets a specific set of conditions. When a condition is met, it evaluates to a Boolean value of True and performs specified actions. When the condition isn’t met, it evaluates a Boolean value of False and doesn’t perform the specified actions. 
+>
+> *Syntax*: \
+> ```
+> if  <condition>: # (Header) starts a conditional statement
+>  <code_to_execute> # (Body) the code to execute if said condition is met
+> elif:
+> <code_to_execute_if_previous_condition_is_not_met>
+> elif: # we can add as many as needed
+> <code_to_execute_if_previous_condition_is_not_met>
+> else:
+> <code_to_execute_if_previous_condition_is_not_met>
+> ```
+> *Example*: \
+> ```
+> if status == 200:
+>    print("OK")
+> elif status == 400:
+>    print("Bad Request")
+> elif status == 500:
+>    print("Internal Server Error")
+> else:
+>    print("check other status")
+> ```
+>
+> ### Logical operators for multiple conditions
+> In some cases, you might want Python to perform an action based on a more complex condition, where two or more conditions need to be met to evaluate *True* or *False*. In such cases, the logical operatos can be used to connect the conditions. \
+> The logical operators are 
+> - `and`
+> - `or`
+> - `not`
+>
+> ### Logical `and`
+> The `and` operator requires both conditions on either side of the operator to evaluate to *True*. 
+> *Example*: \
+> In this case, let us say all HTTP status response codes between 200 and 226 relate to successful responses. For this, the code can be written as \
+> ```
+> if (status >= 200 and status <= 226):
+>    print("successful response")
+> ```
+>
+> ### Logical `or`
+> The `or` operator requires only one of the conditions on either side of the operator to evaluate to *True*.  
+> *Example*: \
+> Both a status code of 100 and a status code of 102 are informational responses. We can use python to print an informational response when code is 100 or 102. \
+> ```
+> if (status == 100 or status == 102):
+>    print("informational response")
+> ```
+>
+> ### Logical `not`
+> The `not` operator negates a given condition so that it evaluates to _False if the condition is True_ and to _True if the condition is False_.  
+> *Example*: \
+> We want to indicate that Python should check the status code when it’s something outside of the successful range, you can use not: \
+> ```
+> if not (status >= 200 or status <= 226):
+>    print("check status")
+> ```
+>
+> ## Iterative statement (Loops)
+> Code that repeatedly executes a set of instructions
+>
+> ### `for` Loop
+> Code is executed based on a sequence
+> *Syntax*: 
+> ```
+> for <loop_variable> in <sequence>: # header
+>   <code_to_execute> # this wil continue until sequence ends
+> ```
+>
+> ### `range()`
+> Used to give a range of numbers \
+> *Example*: `range(0,10)` = 0,1,2,3,4,5,6,7,8,9 \
+>> if no starting number is given, the range starts from 0. The end point is always required and we can add another number to change the count.
+>
+>> *For example:* `range(0,10,2)` = 0,2,4,6,8
+>
+> ### `while` Loop
+> If you want a loop to iterate based on a condition, you should use a while loop. As long as the condition is True, the loop continues, but when it evaluates to False, the while loop exits 
+>
+> *Syntax*: 
+> ```
+> while <condition>: # header
+>   <code_to_execute> # (body) this wil continue until condition is satisfied
+> ```
+>
+> ### `break`
+> When you want to exit a `for` or `while` loop based on a particular condition in an if statement being **True**, you can write a conditional statement in the body of the loop and write the keyword `break` in the body of the conditional. \
+> *Example*:
+> ![break_example](image-29.png)
+>
+>### `continue`
+> When you want to skip an iteration based on a certain condition in an if statement being True, you can add the keyword continue in the body of a conditional statement within the loop \
+> *Example*:
+> ![continue_example](image-28.png)
+>
+> ### Infinite loops
+> If you create a loop that doesn't exit, this is called an infinite loop. In these cases, you should press CTRL-C or CTRL-Z on your keyboard to stop the infinite loop. You might need to do this when running a service that constantly processes data, such as a web server.
+>
+# Module 2
