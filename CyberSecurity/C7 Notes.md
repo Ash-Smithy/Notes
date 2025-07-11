@@ -268,3 +268,138 @@ Some areas of cybersecurity in which Python might be used to automate specific t
 > If you create a loop that doesn't exit, this is called an infinite loop. In these cases, you should press CTRL-C or CTRL-Z on your keyboard to stop the infinite loop. You might need to do this when running a service that constantly processes data, such as a web server.
 >
 # Module 2
+>
+> ## Function
+> A section of code that can be reused in a program
+>
+> ## Built-in functions
+> Functions that exist within Python and can be called directly
+>
+> ## User-defined functions
+> Functions that programmers design for their specific 
+>
+> ### `def`
+>  Placed before a function name to define a function \
+> *Example*: \
+> ```
+> def myfunction():
+>   print("This is a user-defined function!")
+> myfunction()
+> ```
+> Output: \
+> This is a user-defined function!
+>
+> ## Parameter
+> An object tht is included in a function definition for use in that function
+>
+> ## Argument (Python)
+> Data brought into a function when it is called
+>
+> Example with one parameter:
+> ![pm_am_example](image-30.png) \
+> Here *name* is parameter and *Chaarlie Patel* is Argument
+>
+> Example with two parameters:
+> ![two_parameter_example](image-31.png) \
+> Here *first_name , last_name* are parameters and *Kiara , Carter* are arguments
+>
+> ## Return Statement
+> A python statement that executes inside a function and sends information back to the function call
+>
+> ### `return`
+> Used to return information from a function
+> 
+> *Example*:
+> ![return_example](image-32.png)
+>
+> ## Global variables
+> A global variable is a variable that is available through the entire program. Global variables are assigned outside of a function definition. Whenever that variable is called, whether inside or outside a function, it will return the value it is assigned.
+>
+> ## Local variables
+> A local variable is a variable assigned within a function. These variables cannot be called or accessed outside of the body of a function. Local variables include parameters as well as other variables assigned within a function definition.
+>
+> ## Built-in Functions
+> Functions that exist within Python and can be called directly
+>
+> - `print()` \
+> Outputs a specified object to the screen \
+> *Example*: 
+> ```
+> month = "September"
+> print("Investigate failed login attempts during", month, "if more than", 100) # Investigate failed login attempts during September if more than 100
+> ```
+>
+> - `type()` \
+> Returns data type of its input \
+> > *Example*: 
+> ```
+> print(type("This is a string")) # <class 'str'>
+> ```
+>
+> - `max()` \
+> Returns the largest numeric input passed to it \
+>
+> - `min()` \
+> Returns the smalltest numeric input passed into it. \
+>
+> *Example*: 
+> ```
+> time_list = [12, 2, 32, 19, 57, 22, 14]
+>print(min(time_list)) # 2
+>print(max(time_list)) # 57
+>```
+>
+> - `sorted()` \
+> Sorts the components of a list \
+> *Example:* 
+> ```
+> time_list = [12, 2, 32, 19, 57, 22, 14]
+> print(sorted(time_list))
+> ```
+> ![sorted()](image-33.png)
+>
+> ## Module
+> A python file that contains additional functions, variables, classes and any kind of runnable code
+>
+> ## Python Standard Library
+> An extensive collection of usable Python code that often comes packaged with Python
+>
+> ### Python Standard Library modules
+> - The `re` module, which provides functions used for searching for patterns in log files
+>
+> - The `csv` module, which provides functions used when working with `.csv` files
+>
+> - The `glob` and `os` modules, which provide functions used when interacting with the command line
+>
+> - The `time` and `datetime` modules, which provide functions used when working with timestamps
+> - The `statistics` module includes functions used when calculating statistics related to numeric data.
+>
+> ### Importing an entire module
+> To import an entire Python Standard Library module, you use the import keyword.
+> *Example:*
+> ![importing_modules_example](image-34.png)
+>
+> ### Importing specific functions from a module
+> To import a specific function from the Python Standard Library, you can use the from keyword. \
+> *For example*, if you want to import just the `median()` function from the `statistics` module, you can write `from statistics import median`.
+>
+> ![importing_specific_functions_example](image-35.png)
+>
+> ### External libraries
+> In addition to the Python Standard Library, you can also download external libraries and incorporate them into your Python code. \
+> To install a library, such as numpy, in either environment, you can run the following line prior to importing the library: \
+>`%pip install numpy` \
+> After a library is installed, you can import it directly into Python using the import keyword \
+> `import numpy`
+>
+> ## Style Guide
+> A manual that informs the writing, formatting and design of documents
+>
+> ### Comments
+> A note programmers make about the intentions behind their code
+> 
+> ### Indentation
+> Space addeded at the beginning of the line of code
+>
+> 
+> 
