@@ -402,4 +402,106 @@ Some areas of cybersecurity in which Python might be used to automate specific t
 > Space addeded at the beginning of the line of code
 >
 > 
+# Module 3
+> 
+> ## String data
+> Data consisting of an ordered sequence of characters \
+> *example:* "123" "Hello" "Number 1"
+> 
+> ### `str()`
+> Converts the input object to a string \
+> *Example:* \
+> ![str()_example](image-36.png)
+>
+> ### `len()` 
+> returns the number of elements in an object \
+> *Example:* \
+> ![len()_example](image-37.png) 
+>
+> ## String Concatenation
+> The process of joining two strings together \
+> *Example:* \
+> ![concatenation_example](image-38.png)
+>
+> ### Method
+> A function that belongs to a specific data type
+>
+> ## String Methods
+> String methods are placed after the string.
+>
+> ### `.()upper`
+> Returns a copy of the string in all uppercase letters \
+> *Example*: \
+> ![.upper()_example](image-39.png)
+>
+> ### `.()lower`
+> Returns a copy of the string in all lowercase letters \
+> *Example*: \
+> ![lower()_example](image-40.png)
+>
+> ## Index
+> A number assgined to every element in a sequence that indicates its position \
+> Indices start at 0. \
+> ![indices](image-41.png)
+>
+> ## Slicing
+> A slice is a part of the string \
+> ![slicing](image-42.png) \
+> ![slicing_example](image-43.png)
+>
+> ### `.index()`
+> Finds the first occurrence of the input in a string and returns its location. \
+> ![indexing_example](image-44.png) \
+> ![indexing_with_repeating_string](image-45.png)
+>
+> ### Immutable
+> Cannot be changed after it is created and assigned a value. \
+> Strings are immutable. 
+>
+> ## Lists
+> List data is a data structure that consists of a collection of data in sequential form. 
+> 
+> ## List slicing
+>  Similar to strings, you can use bracket notation to extract elements or slices in a list. \
+> *Example*: \
+> ![List_slicing_example](image-50.png)
+>
+> ## List concatenation
+> Combining two lists into one by placint the elements of the second list directly after the elements of the first list \
+> *Example:* \
+> ![lists_concatenation_example](image-46.png) 
+>
+>> **Note**: Lists are not immutable \
+>> ![list_immutable_example](image-47.png)
+>  
+> ## List methods
+> 
+> ### `.insert()`
+> Adds an element in specific position inside a list \
+> It takes two arguments, position and value \
+> Syntax: `<variable>.insert(<position>,<value>)`
+> *Example*: \
+> ![.inser()_example](image-48.png)
+>
+> ### `.remove()`
+> Removes the first occurence of a specific element in a list \
+> Syntax: `<varable>.remove(<value to remove>)` \
+> *Example:* : \
+> ![.remove()_example](image-49.png)
+>
+> ### `.append()`
+> Adds input to the end of a list. 
+>  Syntax: `<varable>.append(<value to append>)` \
+> *Example:* : \
+> ![appending_list](image-51.png)
+>
+> ### `.index()`
+> Similar to the .index() method used for strings, the .index() method used for lists finds the first occurrence of an element in a list and returns its index. It takes the element you're searching for as an input. \
+> *Syntax*: `<variable>.index(<value to search for>)`
+> *Example*:
+> ![.index()_example](image-52.png)
+> 
+> ## Algorithm
+> A set of rules that solves a problem
+>
 > 
