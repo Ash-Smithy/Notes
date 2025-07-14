@@ -504,4 +504,33 @@ Some areas of cybersecurity in which Python might be used to automate specific t
 > ## Algorithm
 > A set of rules that solves a problem
 >
-> 
+> ## Regular Expression (regex)
+> A sequence of characters that forms a pattern \
+> - Need to `import re` for regular expression to work.
+>
+> ### Regular Expression Symbols
+> #### `+` 
+> Represents one or more occurences of a specific character \
+> *Example*: \
+> ![+_example1](image-53.png)
+>
+> #### `\w` 
+> Matches with any alphanumeric character but it doesn't match symbols
+>> **Note**: The \w symbol also matches with the underscore (`_`).
+>
+> *Example*:  \
+> ![\w_example1](image-54.png)
+>
+> #### Combining `\w` and `+` (`\w+`)
+> ![\w+_example](image-55.png)
+>
+> ![other_symbols](image-57.png) 
+>> The `*` symbol represents zero, one, or more occurrences of a specific character. 
+>
+> ![re1](image-58.png) \
+>![re2](image-59.png)
+>
+> ### `re.findall()`
+> Returns a list of matches to a regular expression. \
+> *Syntax:* `re.findall(<pattern>,<vairable to find pattern>)` \
+> *Example:* ![re.findall()_example](image-56.png)
