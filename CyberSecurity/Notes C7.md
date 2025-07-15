@@ -309,7 +309,7 @@ Some areas of cybersecurity in which Python might be used to automate specific t
 > ### `return`
 > Used to return information from a function
 > 
-> *Example*:
+> *Example*: \
 > ![return_example](image-32.png)
 >
 > ## Global variables
@@ -375,8 +375,8 @@ Some areas of cybersecurity in which Python might be used to automate specific t
 > - The `statistics` module includes functions used when calculating statistics related to numeric data.
 >
 > ### Importing an entire module
-> To import an entire Python Standard Library module, you use the import keyword.
-> *Example:*
+> To import an entire Python Standard Library module, you use the import keyword. \
+> *Example:* \
 > ![importing_modules_example](image-34.png)
 >
 > ### Importing specific functions from a module
