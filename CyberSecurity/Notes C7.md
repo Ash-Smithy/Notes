@@ -295,11 +295,11 @@ Some areas of cybersecurity in which Python might be used to automate specific t
 > ## Argument (Python)
 > Data brought into a function when it is called
 >
-> Example with one parameter:
+> Example with one parameter: \
 > ![pm_am_example](image-30.png) \
 > Here *name* is parameter and *Chaarlie Patel* is Argument
 >
-> Example with two parameters:
+> Example with two parameters: \
 > ![two_parameter_example](image-31.png) \
 > Here *first_name , last_name* are parameters and *Kiara , Carter* are arguments
 >
