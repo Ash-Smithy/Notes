@@ -534,3 +534,17 @@ Some areas of cybersecurity in which Python might be used to automate specific t
 > Returns a list of matches to a regular expression. \
 > *Syntax:* `re.findall(<pattern>,<vairable to find pattern>)` \
 > *Example:* ![re.findall()_example](image-56.png)
+>
+# Module 4
+>
+> ##  Why Automate Security Tasks in CI/CD with Python?
+>
+> - **Increases Speed and Efficiency:** Python scripts for security checks are fast and work well as part of your pipeline. This keeps your software releases quick and secure at the same time.
+>
+> - **Finds Problems Early:** Python can help find security problems early on when software is being developed. This makes problems easier and less expensive to fix. 
+>
+> - **Remains Consistent:** Python scripts make sure security checks are done the same way every time you build and release software. This lowers the chance of human error.
+>
+> - **Reduces workload  for Security Teams:** Python frees up security teams from repetitive tasks and allows them to work on  larger security problems, planning, or creating better Python scripts for security automation.
+>
+> - **Supports a culture or security:** Python-based automation helps put security into the CI/CD process. This helps create a DevSecOps culture where everyone thinks about security, not just the security team.
