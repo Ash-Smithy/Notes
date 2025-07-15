@@ -533,7 +533,8 @@ Some areas of cybersecurity in which Python might be used to automate specific t
 > ### `re.findall()`
 > Returns a list of matches to a regular expression. \
 > *Syntax:* `re.findall(<pattern>,<vairable to find pattern>)` \
-> *Example:* \ ![re.findall()_example](image-56.png)
+> *Example:* \ 
+> ![re.findall()_example](image-56.png)
 >
 # Module 4
 >
