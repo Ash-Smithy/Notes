@@ -549,3 +549,109 @@ Some areas of cybersecurity in which Python might be used to automate specific t
 > - **Reduces workload  for Security Teams:** Python frees up security teams from repetitive tasks and allows them to work on  larger security problems, planning, or creating better Python scripts for security automation.
 >
 > - **Supports a culture or security:** Python-based automation helps put security into the CI/CD process. This helps create a DevSecOps culture where everyone thinks about security, not just the security team.
+>
+>
+> ## What Security Tasks Can You Automate in CI/CD with Python?
+>
+> 1. Security Testing 
+>> - Static Application Security Testing (SAST): \
+>> scripts can be written to start SAST tools that look at your code for weaknesses before it gets built. Python can also be used to understand the SAST results, create reports, and automatically stop the process if serious security problems are found.
+>> - Dynamic Application Security Testing (DAST): \
+>> Python can be used to automatically run DAST tools to test software while it’s running in a test area. Then, Python scripts can look at the DAST results and give feedback in the CI/CD pipeline.
+>> - Software Composition Analysis (SCA): \
+>> Python can work with SCA tools to check your software’s dependencies for weaknesses. Dependencies are things like open source code and components from other companies. Scripts can control the SCA process, report problems, and set rules based on the severity of weaknesses.
+> 2. Automated Vulnerability Scanning 
+> 3. Compliance Checks 
+> 4. Secrets Management Automation 
+> 5. Policy Enforcement 
+>
+> ## Opening files in Python
+> To open a file called "update_log.txt" in Python for purposes of reading it, you can incorporate the following line of code:
+>
+>`with open("update_log.txt", "r") as file:` \
+> This line consists of the with keyword, the open() function with its two parameters, and the as keyword followed by a variable name. You must place a colon (:) at the end of the line.
+> 
+> ### `with` 
+> Handles errors and manages external resources when used with other functions. In this case, it's used with the `open()` function in order to open a file. It will then manage the resources by closing the file after exiting the `with` statement.
+>> **Note**: You can also use the open() function without the with keyword. However, you should close the file you opened to ensure proper handling of the file. 
+>
+> ### `open()`
+> A function that opens a file in python
+> *syntax*: `open(<file_name>, <action_to_do_with_file>)` \
+> The action can be:
+> - `"r"` to read
+> - `"w"` to write
+> - `"a"` to append
+>
+> ### `as`
+>  When you open a file using with open(), you must provide a variable that can store the file while you are within the with statement. You can do this through the keyword as followed by this variable name. 
+>
+> ## Reading files in Python
+>
+> ### `read()`
+> Converts files into string. This is necessary in order to use and display the contents of the file that was read.
+>
+> *Example*: 
+> ```
+> with open("update_log.txt", "r") as file:
+>
+>   updates = file.read()
+>
+> print(updates)
+> ```
+>
+> ## Writing files in Python
+> To write to a file, you will need to open the file with `"w"` or `"a"` as the *second* argument of `open()`. 
+>
+> - You should use the `"w"` argument when you want *to replace* the contents of an existing file. \
+> *Example*: \
+> `with open("update_log.txt", "w") as file: ` \
+>>>
+>>> Additionally, you can use the `"w"` argument to create a new file. \
+> *For example*, `with open("update_log2.txt", "w") as file:` creates and opens a new file called `"update_log2.txt".` 
+>
+> - You should use the `"a"` argument if you want *to append* new information to the end of an existing file rather than writing over it. \
+> *Example:* 
+>>> ```
+>>> line = "jrafael,192.168.243.140,4:56:27,True"
+>>>
+>>> with open("access_log.txt", "a") as file:
+>>>    file.write(line)
+>>> ```
+>
+>> **Note**: Calling the .write() method without using the with keyword when importing the file might result in its arguments not being completely written to the file if the file is not properly closed in another way.
+>
+> ## Parsing
+> The process of converting data into a more readable format. \
+> Methods that can help you parse your data include `.split()` and .`join()`.
+>
+> ### `.split()` 
+> Converts a string into a list.  It separates the string based on a specified character that's passed into `.split()` as an argument.  \
+> ![split()_example1](image-60.png)
+> ![split()_example2](image-61.png)
+> Before the .split() method is applied to approved_users, it contains a string, but after it is applied, this string is converted to a list.
+>
+> ### `.join()`
+> The .join() method concatenates the elements of an iterable into a string. \
+> ![join()_example](image-62.png)
+> ![more_on_join](image-64.png)
+> 
+> ## Debugging
+> The practice of identifying and fixing errors in the code
+>
+> ### Three types of Errors
+> 
+> #### 1. Syntax Errors
+> A syntax error is an error that involves invalid usage of a programming language. Syntax errors occur when there is a mistake with the Python syntax itself. Common examples of syntax errors include forgetting a punctuation mark, such as a closing bracket for a list or a colon after a function header.  
+>
+> #### 2. Logic Errors
+> A logic error is an error that results when the logic used in code produces unintended results.  Logic errors may not produce error messages. In other words, the code will not do what you expect it to do, but it is still valid to the interpreter. 
+>
+> #### 3. Exceptions
+> An exception is an error that involves code that cannot be executed even though it is syntactically correct. This happens for a variety of reasons.
+>
+> ### Debugging strategies  
+> A debugger is a software tool that helps to locate the source of an error and assess its causes.
+> 
+> - Some debugging assistants include the use of AI
+> - Using `print()` statements
